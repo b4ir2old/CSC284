@@ -32,4 +32,10 @@ public class Student {
 		this.lastName = lastName;
 	}
 
+	public String toString() {
+
+		return "firstName: " + this.firstName + "\n" + "lastName: " + this.lastName + "\n";
+
+	}
+
 }
