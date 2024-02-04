@@ -2,6 +2,8 @@ import java.util.ArrayList;
 
 import Students.Student;
 
+//Scott Michael Anderson
+//02_04_2024
 public class ParticipationList {
 
 	public static void main(String[] args) {
