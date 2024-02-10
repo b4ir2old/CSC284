@@ -4,17 +4,18 @@ public class ParticipationList {
 
    public static void main(String[] args) {
       
-      ArrayList<Student> students = new ArrayList<>();
+      ArrayList<String> students = new ArrayList<>(); // Changed to ArrayList<String>
       
-      //TODO: Create a Student Object with your first and last name and add them to the students list
-      students.add(new Student("Colson","Dunlap"));
-      students.add(new Student("John","Doe"));
+      // Add student names
+      students.add("Colson Dunlap");
+      students.add("John Doe");
+      students.add("Joseph Burke");
      
-      //Sort the list by last name
-      students.sort((o1,o2) -> o1.getLastName().compareTo(o2.getLastName()));
+      // Sort the list alphabetically
+      students.sort(String::compareTo);
       
-      //print the list of students
-      for(Student student: students){
+      // Print the list of students
+      for (String student : students) {
          System.out.println(student);
       }
    }
